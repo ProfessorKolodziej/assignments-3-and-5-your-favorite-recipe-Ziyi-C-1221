@@ -1,11 +1,308 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.navigation {
+	color: #9C6217;
+	font: calc(30px + 3vw) "Krona One", sans-serif;
+	background-color: #FFBE61;
+	padding: 5%;
+	margin: 0 5%;
+	text-align: center;
+	display: block;
+}
+
+
+
+h1 {
+	color: #DACC8E;
+	font: bold calc(40px + 4vw) Gluten, sans-serif;
+	-webkit-text-stroke: 0.03em #605135;
+	text-shadow: 0 0.1em 0.3em #605135;
+	text-align: center;
+	margin: 5% 5%;
+}
+
+
+.yellow,
+.first-ingredients-wrapper ul,
+.second-ingredients ul {
+	background-color: #FBF6D9;
+	padding: 3%;
+	margin: 5%;
+}
+
+.orange,
+.intro-wrapper p,
+.topping-wrapper ul,
+.topping-wrapper p,
+.instructions ol {
+	background-color: #FFDDAB;
+	padding: 3%;
+	margin: 5%;
+}
+
+
+ul a,
+ol a {
+	color: #605135;
+}
+
+
+
+.recipe,
+.steps {
+	padding: 3%;
+	margin: 5%;
+}
+
+.steps {
+	position: relative;
+	list-style-position: inside;
+}
+
+.steps::before {
+	content: "";
+	display: block;
+	background: #FFDDAB;
+	width: 5%;
+	height: 96%;
+	position: absolute;
+	left: -5.5%;
+	margin: auto;
+	top: -1%;
+}
+
+/*Class 5 Part 6 recording https://learn.bu.edu/ultra/courses/_139975_1/outline/lti/launchFrame?toolHref=https:~2F~2Flearn.bu.edu~2Fwebapps~2Fblackboard~2Fexecute~2Fblti~2FlaunchPlacement%3Fblti_placement_id%3D_257_1%26content_id%3D_14382458_1%26course_id%3D_139975_1%26wrapped%3Dtrue%26from_ultra%3Dtrue*/
+
+.steps-photos1,
+.steps-photos2,
+.steps-photos3 {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	align-items: center;
+	height: 10%;
+}
+
+.steps-photos1::before,
+.steps-photos2::before,
+.steps-photos3::before {
+	content: "";
+	display: block;
+	width: 5%;
+	position: absolute;
+	left: 0;
+	margin: auto;
+	height: 96%;
+}
+
+.steps-photos1::before,
+.steps-photos3::before {
+	background: #FBF6D9;
+}
+
+.steps-photos2::before {
+	background: #FFDDAB;
+}
+
+/*Class 5 Part 6 recording https://learn.bu.edu/ultra/courses/_139975_1/outline/lti/launchFrame?toolHref=https:~2F~2Flearn.bu.edu~2Fwebapps~2Fblackboard~2Fexecute~2Fblti~2FlaunchPlacement%3Fblti_placement_id%3D_257_1%26content_id%3D_14382458_1%26course_id%3D_139975_1%26wrapped%3Dtrue%26from_ultra%3Dtrue*/
+.steps-photos1 img,
+.steps-photos2 img,
+.steps-photos3 img {
+	max-width: 50%;
+	height: 20em;
+	margin: 2%;
+	padding: 2%;
+}
+
+.steps-photos1 li,
+.steps-photos2 li,
+.steps-photos3 li {
+	margin: auto 5% auto 2%;
+	flex: 1;
+}
+
+h2 {
+	font-size: calc(30px + 1vw);
+	color: #475419;
+	font-family: "Kanit", sans-serif;
+	border-radius: 12vw;
+	border: 0.2em solid #C2D287;
+	padding: 3%;
+	margin: 5% auto;
+	width: fit-content;
+	text-align: center;
+}
+
+h3 {
+	font-size: calc(25px + 1vw);
+	color: #475419;
+	font-family: "Kanit", sans-serif;
+	border-radius: 12vw;
+	border: 0.2em solid #C2D287;
+	padding: 3%;
+	margin: 5% auto;
+	width: fit-content;
+	text-align: center;
+}
+
+p {
+	font-size: calc(16px + 1vw);
+	color: #6F5B40;
+	font-family: Ubuntu, sans-serif;
+}
+
+p a {
+	text-decoration: underline;
+	color: #6F5B40;
+}
+
+ul,
+ol {
+	font-size: calc(16px + 1vw);
+	color: #6F5B40;
+	font-family: Ubuntu, sans-serif;
+	list-style-position: inside;
+}
+
+
+img {
+	display: block;
+	max-width: 90%;
+	margin: 0 auto;
+
+}
+
+
+@media (min-width: 834px) {
+	.intro-wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 95%;
+	}
+
+	.intro-wrapper img {
+		max-width: 30%;
+		height: 60vh;
+		order: 2;
+	}
+
+	.intro-wrapper p {
+		width: 100%;
+		margin: auto 2% auto 5%;
+		order: 1;
 	}
 }
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
+@media (min-width: 834px) {
+	.first-ingredients-wrapper img {
+		transform: rotate(90deg);
+		width: 50%;
+		max-width: 90%;
+	}
+}
+
+@media (min-width: 1280px) {
+	.topping-wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		gap: 2%;
+	}
+
+	.topping-wrapper p {
+		width: 50%;
+		margin: auto 5%;
+	}
+
+	.topping-wrapper ul {
+		width: 50%;
+		margin: auto 5%;
+
+	}
+}
+
+@media (min-width: 1280px) {
+	.ingredient-instruction-wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		gap: 2%;
+	}
+
+	.second-ingredients,
+	.instructions {
+		width: 50%;
+		margin: 5%;
+	}
+
+	.second-ingredients h3,
+	.instructions h3 {
+		margin-bottom: 10%;
+		text-align: left;
+	}
+
+	.second-ingredients ul,
+	.instructions ol {
+		list-style-position: inside;
+		margin: 0;
+		padding: 7%;
+	}
+}
+
+@media (min-width: 1280px) {
+	.intro-wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 90vw;
+		margin: 0;
+	}
+
+	.intro-wrapper img {
+		max-width: 30%;
+		height: 60vh;
+		order: 2;
+		transform: rotate(90deg);
+		margin: auto 0 auto 5%;
+	}
+
+	.intro-wrapper p {
+		width: 70%;
+		margin: auto 5%;
+		order: 1;
+	}
+}
+
+
+@media (min-width: 1280px) {
+	.first-ingredients-wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 90vw;
+		margin: 0;
+	}
+
+	.first-ingredients-wrapper img {
+		max-width: 30%;
+		height: 60vh;
+		order: 2;
+		margin: auto 0 auto 5%;
+	}
+
+	.first-ingredients-wrapper ul {
+		width: 70%;
+		margin: auto 5%;
+		order: 1;
 	}
 }
