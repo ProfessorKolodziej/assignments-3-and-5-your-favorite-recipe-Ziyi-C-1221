@@ -90,6 +90,7 @@ ol a {
 	position: relative;
 	align-items: center;
 	height: 10%;
+	object-fit: cover;
 }
 
 .steps-photos1::before,
@@ -102,15 +103,18 @@ ol a {
 	left: 0;
 	margin: auto;
 	height: 96%;
+	object-fit: cover;
 }
 
 .steps-photos1::before,
 .steps-photos3::before {
 	background: #FBF6D9;
+	object-fit: cover;
 }
 
 .steps-photos2::before {
 	background: #FFDDAB;
+	object-fit: cover;
 }
 
 /*Class 5 Part 6 recording https://learn.bu.edu/ultra/courses/_139975_1/outline/lti/launchFrame?toolHref=https:~2F~2Flearn.bu.edu~2Fwebapps~2Fblackboard~2Fexecute~2Fblti~2FlaunchPlacement%3Fblti_placement_id%3D_257_1%26content_id%3D_14382458_1%26course_id%3D_139975_1%26wrapped%3Dtrue%26from_ultra%3Dtrue*/
@@ -121,6 +125,7 @@ ol a {
 	height: 20em;
 	margin: 2%;
 	padding: 2%;
+	object-fit: cover;
 }
 
 .steps-photos1 li,
@@ -178,7 +183,7 @@ img {
 	display: block;
 	max-width: 90%;
 	margin: 0 auto;
-
+	object-fit: cover;
 }
 
 
@@ -194,6 +199,7 @@ img {
 		max-width: 30%;
 		height: 60vh;
 		order: 2;
+		object-fit: cover;
 	}
 
 	.intro-wrapper p {
@@ -208,6 +214,7 @@ img {
 		transform: rotate(90deg);
 		width: 50%;
 		max-width: 90%;
+		object-fit: cover;
 	}
 }
 
@@ -274,6 +281,7 @@ img {
 		order: 2;
 		transform: rotate(90deg);
 		margin: auto 0 auto 5%;
+		object-fit: cover;
 	}
 
 	.intro-wrapper p {
@@ -298,6 +306,7 @@ img {
 		height: 60vh;
 		order: 2;
 		margin: auto 0 auto 5%;
+		object-fit: cover;
 	}
 
 	.first-ingredients-wrapper ul {
